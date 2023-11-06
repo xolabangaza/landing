@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Passion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            color: #fff;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: #fff;
+            color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #3498db;
+            color: #fff;
+        }
+
+        hr {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tennis Enthusiast</h1>
+        <h2>For the Love of the Game</h2>
+    </header>
+
+    <div class="main-content">
+        <img src="https://i.postimg.cc/kGph5cWH/weyzoz6o394sxfkbest9.webp" alt="Tennis Court">
+        <p>
+            Tennis is not just a sport; it's a passion that ignites the spirit. Whether you're a player or a fan, the thrill of the game is unmatched.
+        </p>
+        <hr>
+        <p>
+            Ready to swing into action? Click the button below to find tennis courts near you!
+        </p>
+        <button onclick="findTennisCourts()">Find Tennis Courts</button>
+    </div>
+
+    <script>
+        function findTennisCourts() {
+            var location = prompt("Enter your location to find tennis courts:");
+            if (location !== null) {
+                alert("Great choice! Tennis courts near " + location + " have been found.");
+            }
+        }
+    </script>
+</body>
+</html>
